@@ -1,0 +1,201 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/plants/protos/FlowerPot.proto"
+EXTERNPROTO "../protos/E-puck.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/obstacles/protos/OilBarrel.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/balls/protos/Ball.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.2029200630544864 -0.8577633371994925 0.4722981106953035 5.385962172600666
+  position -2.1580362357953167 1.0918488523015808 2.5312926423047917
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorSize 1.3 3
+  floorTileSize 0 0
+  floorAppearance PBRAppearance {
+    baseColorMap ImageTexture {
+      url [
+        "../images/grass.jpg"
+      ]
+    }
+    metalness 0.2
+    emissiveIntensity -1
+  }
+}
+OilBarrel {
+  translation -0.3 -0.2625 0.05
+  height 0.1
+  radius 0.0375
+}
+OilBarrel {
+  translation -0.3 -0.075 0.05
+  name "oil barrel(1)"
+  height 0.1
+  radius 0.0375
+}
+DEF obstacles Group {
+  children [
+    OilBarrel {
+      translation 0.075 -0.22 0.05
+      name "b1"
+      height 0.1
+      radius 0.05
+    }
+    OilBarrel {
+      translation 0.076 -0.38 0.05
+      name "b2"
+      height 0.1
+      radius 0.05
+    }
+    OilBarrel {
+      translation -0.073 -0.52 0.05
+      name "b3"
+      height 0.1
+      radius 0.05
+    }
+  ]
+}
+E-puck {
+  hidden position_0_0 -1.8386263312309747
+  hidden position_0_1 1.838626324143582
+  hidden rotation_1 0 -1 0 1.8386263312309747
+  hidden rotation_2 0 1 0 1.838626324143582
+  translation -0.4 1 0
+  rotation -6.058783789517418e-06 7.4501270381496395e-06 0.9999999999538933 1.2931194350063058
+  controller "controller_d"
+}
+DEF flower_pots Group {
+  children [
+    Group {
+      children [
+        FlowerPot {
+          translation 0.3 -0.6 0
+          name "pot_a1"
+        }
+        FlowerPot {
+          translation 0.15 -0.6 0
+          name "pot_a2"
+        }
+        FlowerPot {
+          translation 0 -0.6 0
+          name "pot_a3"
+        }
+        FlowerPot {
+          translation -0.15 -0.6 0
+          name "pot_a4"
+        }
+        FlowerPot {
+          translation -0.3 -0.6 0
+          name "pot_a5"
+        }
+      ]
+    }
+    Group {
+      children [
+        FlowerPot {
+          translation 0.3 -0.3 0
+          name "pot_b1"
+        }
+        FlowerPot {
+          translation 0.15 -0.3 0
+          name "pot_b2"
+        }
+        FlowerPot {
+          translation 0 -0.3 0
+          name "pot_b3"
+        }
+        FlowerPot {
+          translation -0.15 -0.3 0
+          name "pot_b4"
+        }
+        FlowerPot {
+          translation -0.3 -0.3 0
+          name "pot_b5"
+        }
+      ]
+    }
+    Group {
+      children [
+        FlowerPot {
+          translation 0.3 0 0
+          name "pot_c1"
+        }
+        FlowerPot {
+          translation 0.15 0 0
+          name "pot_c2"
+        }
+        FlowerPot {
+          name "pot_c3"
+        }
+        FlowerPot {
+          translation -0.15 0 0
+          name "pot_c4"
+        }
+        FlowerPot {
+          translation -0.3 0 0
+          name "pot_c5"
+        }
+      ]
+    }
+    Group {
+      children [
+        FlowerPot {
+          translation 0.3 0.3 0
+          name "pot_d1"
+        }
+        FlowerPot {
+          translation 0.15 0.3 0
+          name "pot_d2"
+        }
+        FlowerPot {
+          translation 0 0.3 0
+          name "pot_d3"
+        }
+        FlowerPot {
+          translation -0.15 0.3 0
+          name "pot_d4"
+        }
+        FlowerPot {
+          translation -0.3 0.3 0
+          name "pot_d5"
+        }
+      ]
+    }
+    Group {
+      children [
+        FlowerPot {
+          translation 0.3 0.6 0
+          name "pot_e1"
+        }
+        FlowerPot {
+          translation 0.15 0.6 0
+          name "pot_e2"
+        }
+        FlowerPot {
+          translation 0 0.6 0
+          name "pot_e3"
+        }
+        FlowerPot {
+          translation -0.15 0.6 0
+          name "pot_e4"
+        }
+        FlowerPot {
+          translation -0.3 0.6 0
+          name "pot_e5"
+        }
+      ]
+    }
+  ]
+}
+Ball {
+  translation 0.4 -1.2 0.03241254735491989
+}

@@ -1,10 +1,10 @@
 # Dokumentation
 | Gruppenteilnehmer       | Matrikelnummer |
 | ----------------------- | -------------- |
-| Sajjad Faizy            | 2698142        |
-| Michel Radloff          | 2682530        |
-| Aran Sadeghi Yazdankhah | 2604639        |
-| Daniel Cortés Caparrós  | 2676212        |
+| Sajjad Faizy            |         |
+| Michel Radloff          |         |
+| Aran Sadeghi Yazdankhah |         |
+| Daniel Cortés Caparrós  |        |
 
 
 | Betreuer                 | Abgabedatum |
@@ -403,3 +403,4 @@ Werden auf dem Weg Hindernisse erkannt, wird vom Wavefront-Algorithmus zum Bug-A
 ![Veranschaulichung GNSS-Navigation kombiniert mit Hindernisvermeidung - 1](/0_Bilder_Dokumentation/Navigation_1.jpg)
 ![Veranschaulichung GNSS-Navigation kombiniert mit Hindernisvermeidung - 2](/0_Bilder_Dokumentation/Navigation_2.jpg)
 ![Veranschaulichung GNSS-Navigation kombiniert mit Hindernisvermeidung - 3](/0_Bilder_Dokumentation/Navigation_3.jpg)
+
